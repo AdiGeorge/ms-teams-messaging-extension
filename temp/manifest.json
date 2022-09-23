@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "fe1017c1-cda0-4115-b2ba-5cc60a7f8341",
+  "version": "0.0.1",
+  "packageName": "msmessagingextension",
+  "developer": {
+    "name": "AdiGeorge",
+    "websiteUrl": "https://adi.ngrok.io",
+    "privacyUrl": "https://adi.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://adi.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "ms messaging extension",
+    "full": "ms messaging extension"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [
+    {
+      "botId": "fe1017c1-cda0-4115-b2ba-5cc60a7f8341",
+      "canUpdateConfiguration": false,
+      "commands": [
+        {
+          "id": "planetExpanderAction",
+          "type": "action",
+          "title": "Planet Expander",
+          "description": "Lookup the details of a planet.",
+          "context": [
+            "compose",
+            "message"
+          ],
+          "fetchTask": true
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "adi.ngrok.io"
+  ],
+  "showLoadingIndicator": false
+}

@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "AdiGeorge"
+    },
+    "libraryName": "msMessagingExtension",
+    "generator-version": "4.0.1"
+  }
+}
